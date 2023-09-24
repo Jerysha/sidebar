@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+li i {
+    margin: 5px;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    background-image: url(img/keyboard_image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.open-icon {
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    left: 10px;
+}
+
+.sidemenu {
+    max-width: 700px;
+    min-width: 200px;
+    position: fixed;
+    padding: 20px;
+    width: 285px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear;
+}
+
+.active {
+    display: none;
+    transition: all 0.2s linear;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.logo i {
+    font-size: 30px;
+}
+
+li:hover {
+    border-left: 1px solid white;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear;
+}
+
+.socials-container {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+}
+
+.socials-container i {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px 5px;
+    opacity: 0.6;
+}
+
+.socials-container i:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+@media (max-width:500px) {
+    ul {
+        margin-top: 20px;
+    }
+    li {
+        margin-top: 10px;
+    }
+}
+
+@media (width: 1024px) {
+    .logo {
+        padding: 10px;
+    }
+    li {
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .socials-container {
+        font-size: 5px;
+    }
+}
